@@ -94,10 +94,16 @@ The pages use the FlexBox, which are substantially divided into three parts. The
 
 ## 截图 Screenshots
 
-![v3.1.0-home-pc](https://github.com/QuainK/qktool/tree/master/screenshots/v3.1.0-home-pc.png)
+![v3.1.0-home-pc](https://raw.githubusercontent.com/QuainK/qktool/master/screenshots/v3.1.0-home-pc.png)
 
-![v3.1.0-works-pc](https://github.com/QuainK/qktool/tree/master/screenshots/v3.1.0-works-pc.png)
+---
 
-![v3.1.0-home-mobile](https://github.com/QuainK/qktool/tree/master/screenshots/v3.1.0-home-mobile.png)
+![v3.1.0-works-pc](https://raw.githubusercontent.com/QuainK/qktool/master/screenshots/v3.1.0-works-pc.png)
 
-![v3.1.0-works-mobile](https://github.com/QuainK/qktool/tree/master/screenshots/v3.1.0-works-mobile.png)
+---
+
+![v3.1.0-home-mobile](https://raw.githubusercontent.com/QuainK/qktool/master/screenshots/v3.1.0-home-mobile.png)
+
+---
+
+![v3.1.0-works-mobile](https://raw.githubusercontent.com/QuainK/qktool/master/screenshots/v3.1.0-works-mobile.jpg)

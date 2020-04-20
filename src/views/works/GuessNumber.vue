@@ -2,7 +2,7 @@
   <div id="main">
     <div id="title">
       <h2>猜数 GuessNumber</h2>
-      <h3>3.0.0</h3>
+      <h3>3.0.1</h3>
     </div>
 
     <div id="content">
@@ -18,20 +18,24 @@
     <div id="log">
       <p>更新日志</p>
       <div class="log-item">
-        <span>版本 3.0.0 日期时间 2020.04.11</span>
-        <p>使用Vue.js重构</p>
+        <span>3.0.1 - 2020.04.20</span>
+        <p>文本框样式稍作修改</p>
       </div>
       <div class="log-item">
-        <span>版本 2.0.0 日期时间 2020.04.08</span>
-        <p>优化HTML/CSS/JS，应用全局风格</p>
+        <span>3.0.0 - 2020.04.11</span>
+        <p>使用 Vue.js 重构</p>
       </div>
       <div class="log-item">
-        <span>版本 1.0.0 日期时间 2016.08</span>
-        <p>alpha版本(HTML 4.01)文件丢失，重写(HTML 5)</p>
+        <span>2.0.0 - 2020.04.08</span>
+        <p>优化 HTML/CSS/JS，应用全局风格</p>
       </div>
       <div class="log-item">
-        <span>版本 1.0.0-alpha 日期时间 2011.07</span>
-        <p>猜测随机生成的0-100的整数</p>
+        <span>1.0.0 - 2016.08</span>
+        <p>alpha 版本 (HTML 4.01) 文件丢失，重写 (HTML 5)</p>
+      </div>
+      <div class="log-item">
+        <span>1.0.0-alpha - 2011.07</span>
+        <p>猜测随机生成的 0-100 的整数</p>
       </div>
     </div>
   </div>
@@ -96,6 +100,17 @@
     text-align: center;
     border: 1px solid #999;
     border-radius: 5px;
+    outline: none;
+  }
+
+  input:hover {
+    border: 1px solid #ddd;
+    background-color: #eee;
+  }
+
+  input:active {
+    border: 1px solid #aaa;
+    background-color: #bbb;
   }
 
   /*Chrome、Safari等关闭数字输入框的上下箭头*/

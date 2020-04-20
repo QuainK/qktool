@@ -2,7 +2,7 @@
   <div id="main">
     <div id="title">
       <h2>搜索引擎整合 So</h2>
-      <h3>版本号：1.0.1</h3>
+      <h3>版本号：1.0.2</h3>
     </div>
 
     <div id="content">
@@ -40,11 +40,15 @@
     <div id="log">
       <p>更新日志</p>
       <div class="log-item">
-        <span>版本 1.0.1 日期时间 2020.04.08</span>
-        <p>优化HTML/CSS/JS，应用全局风格</p>
+        <span>1.0.2 - 2020.04.20</span>
+        <p>文本框边框样式稍作修改</p>
       </div>
       <div class="log-item">
-        <span>版本 1.0.0 日期时间 2018.10</span>
+        <span>1.0.1 - 2020.04.08</span>
+        <p>优化 HTML/CSS/JS ，应用全局风格</p>
+      </div>
+      <div class="log-item">
+        <span>1.0.0 - 2018.10</span>
         <p>常用搜索引擎整合</p>
       </div>
     </div>
@@ -59,6 +63,10 @@
 </script>
 
 <style scoped>
+  #content {
+    background-color: #fff;
+  }
+
   .item-container {
     display: flex;
     display: -webkit-flex;
@@ -86,7 +94,7 @@
     width: 250px;
     height: 2rem;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
     outline: none;
     padding: 0 .5rem;
@@ -94,11 +102,11 @@
 
   input:hover {
     background-color: #ccc;
-    border: 1px solid #999;
+    border: 2px solid #999;
   }
 
   input:active {
     background-color: #999;
-    border: 1px solid #666;
+    border: 2px solid #666;
   }
 </style>

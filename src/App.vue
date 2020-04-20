@@ -14,6 +14,6 @@
     name: 'App',
     components: {
       Header, Footer
-    }
+    },
   }
 </script>

@@ -1,6 +1,6 @@
 # QKTool
 
-## 3.1.0 - 2020.04.20
+## 3.2.0 - 2020.04.21
 
 QKTool，主要用于记录学习笔记和展示实践作品的个人网站。
 
@@ -18,7 +18,7 @@ Please move to [CHANGELOG.md](./CHANGELOG.md "CHANGELOG.md") to watch the change
 
 ## 用法 Usage
 
-### 1. 安装好必需的插件包 Install packages required
+### 1. 安装好必需的插件包 Install packages required.
 
 ```yarn
 yarn install
@@ -32,7 +32,7 @@ npm install
 
 接着可以编辑修改了。 And we can edit everything.
 
-### 2. 编译成发布版本（dist） Build to dist files
+### 2. 编译成发布版本 Build to dist files.
 
 ```yarn
 yarn build
@@ -76,7 +76,7 @@ npm build
 
 网页使用弹性布局 FlexBox，大致分成上中下三大块。头部尾部不变，主体部分使用路由更新视图。
 
-The pages use the FlexBox, which are substantially divided into three parts. The header and the footer is constant, and the main part use the router to refresh views.
+The pages use the FlexBox, which are substantially divided into three parts. The header and the footer are both constant, and the main part use the router to refresh views.
 
 - 头部 header
 
@@ -91,19 +91,3 @@ The pages use the FlexBox, which are substantially divided into three parts. The
   - 内容 content
 
 - 尾部 footer
-
-## 截图 Screenshots
-
-![v3.1.0-home-pc](https://raw.githubusercontent.com/QuainK/qktool/master/screenshots/v3.1.0-home-pc.png)
-
----
-
-![v3.1.0-works-pc](https://raw.githubusercontent.com/QuainK/qktool/master/screenshots/v3.1.0-works-pc.png)
-
----
-
-![v3.1.0-home-mobile](https://raw.githubusercontent.com/QuainK/qktool/master/screenshots/v3.1.0-home-mobile.png)
-
----
-
-![v3.1.0-works-mobile](https://raw.githubusercontent.com/QuainK/qktool/master/screenshots/v3.1.0-works-mobile.jpg)

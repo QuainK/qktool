@@ -1,5 +1,6 @@
 <template>
   <div id="main">
+    <div id="title">关于</div>
     <div id="content">
       <h1>QKTool</h1><br><br><br>
       <h2>记录学习笔记</h2>
@@ -24,10 +25,22 @@
 
 <style scoped>
   #content a {
+    display: block;
+    padding: 1rem;
     color: #000;
+    border: 1px solid #333;
+    border-radius: 5px;
   }
 
   #content a:hover {
-    color: #339;
+    background-color: #ddd;
+    color: #000;
+    box-shadow: 0 0 1px 1px #666;
+  }
+
+  #content a:active {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 1px 1px #000;
   }
 </style>

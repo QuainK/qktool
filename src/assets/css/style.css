@@ -2,6 +2,7 @@
   position: relative;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: "Microsoft YaHei UI", "Consolas", "宋体", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -49,16 +50,20 @@ h3 {
 #main {
   display: flex;
   display: -webkit-flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   flex: 1 0 auto;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 #title {
   display: block;
-  padding: .5rem 0;
+  flex: 0 0 auto;
+  padding: 1rem 0;
   font-size: 1.2rem;
 }
 
@@ -66,10 +71,11 @@ h3 {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  flex: 1 0 auto;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 #content p {
@@ -78,9 +84,10 @@ h3 {
 
 #log {
   display: block;
+  flex: 0 0 auto;
   width: 100%;
   text-align: left;
-  padding: 3rem;
+  padding: 2rem;
   background-color: #ddd;
 }
 
@@ -88,10 +95,19 @@ h3 {
   padding: .2rem 0;
 }
 
-#log > p {
+#log > button {
   font-weight: bold;
-  display: inline-block;
   color: #146;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  border: 1px solid #36c;
+  border-radius: 5px;
+  outline: none;
+}
+
+#log > button:hover {
+  color: #333;
+  background-color: #ddd;
 }
 
 .log-item {

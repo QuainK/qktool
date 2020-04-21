@@ -2,7 +2,7 @@
   <div id="main">
     <div id="title">
       <h2>猜数 GuessNumber</h2>
-      <h3>3.0.1</h3>
+      <h3>{{version}}</h3>
     </div>
 
     <div id="content">
@@ -16,26 +16,28 @@
     </div>
 
     <div id="log">
-      <p>更新日志</p>
-      <div class="log-item">
-        <span>3.0.1 - 2020.04.20</span>
-        <p>文本框样式稍作修改</p>
-      </div>
-      <div class="log-item">
-        <span>3.0.0 - 2020.04.11</span>
-        <p>使用 Vue.js 重构</p>
-      </div>
-      <div class="log-item">
-        <span>2.0.0 - 2020.04.08</span>
-        <p>优化 HTML/CSS/JS，应用全局风格</p>
-      </div>
-      <div class="log-item">
-        <span>1.0.0 - 2016.08</span>
-        <p>alpha 版本 (HTML 4.01) 文件丢失，重写 (HTML 5)</p>
-      </div>
-      <div class="log-item">
-        <span>1.0.0-alpha - 2011.07</span>
-        <p>猜测随机生成的 0-100 的整数</p>
+      <button @click="displayChangelog">更新日志</button>
+      <div v-if="isChangelogDisplayed">
+        <div class="log-item">
+          <span>3.0.1 - 2020.04.20</span>
+          <p>样式稍作修改</p>
+        </div>
+        <div class="log-item">
+          <span>3.0.0 - 2020.04.11</span>
+          <p>使用 Vue.js 重构</p>
+        </div>
+        <div class="log-item">
+          <span>2.0.0 - 2020.04.08</span>
+          <p>优化 HTML/CSS/JS，应用全局风格</p>
+        </div>
+        <div class="log-item">
+          <span>1.0.0 - 2016.08</span>
+          <p>alpha 版本 (HTML 4.01) 文件丢失，重写 (HTML 5)</p>
+        </div>
+        <div class="log-item">
+          <span>1.0.0-alpha - 2011.07</span>
+          <p>猜测随机生成的 0-100 的整数</p>
+        </div>
       </div>
     </div>
   </div>
@@ -47,6 +49,8 @@
     title: '猜数 GuessNumber',
     data() {
       return {
+        version: '3.0.1',
+        isChangelogDisplayed: false,
         num: -1,
         answer: '',
       }
@@ -55,6 +59,10 @@
       this.generateNewNum();
     },
     methods: {
+      displayChangelog() {
+        this.isChangelogDisplayed = !this.isChangelogDisplayed;
+      },
+
       generateNewNum() {
         //random() 产生0-1的随机数，然后扩大100倍并向上取整[x]得到答案，即0-100的随机数
         this.num = Math.ceil(Math.random() * 100);
@@ -84,16 +92,14 @@
 </script>
 
 <style scoped>
-  label {
-    display: block;
+  #content label {
     width: 100%;
     margin: 1rem 0;
     font-family: "楷体", sans-serif;
     font-size: 1.5rem;
   }
 
-  input {
-    display: block;
+  #content input {
     width: 300px;
     height: 2rem;
     margin: 1rem 0;
@@ -103,24 +109,24 @@
     outline: none;
   }
 
-  input:hover {
+  #content input:hover {
     border: 1px solid #ddd;
     background-color: #eee;
   }
 
-  input:active {
+  #content input:active {
     border: 1px solid #aaa;
     background-color: #bbb;
   }
 
   /*Chrome、Safari等关闭数字输入框的上下箭头*/
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
+  #content input::-webkit-outer-spin-button,
+  #content input::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
 
   /*FireFox关闭数字输入框上下箭头*/
-  input[type="number"] {
+  #content input[type="number"] {
     -moz-appearance: textfield;
   }
 
@@ -133,20 +139,21 @@
     margin: 1rem 0;
   }
 
-  button {
+  #content button {
     padding: .5rem;
     background-color: #fff;
     border: 1px solid #999;
     border-radius: 5px;
     outline: none;
+    cursor: pointer;
   }
 
-  button:hover {
+  #content button:hover {
     background-color: #ccc;
     border: 1px solid #666;
   }
 
-  button:active {
+  #content button:active {
     background-color: #999;
     border: 1px solid #333;
   }

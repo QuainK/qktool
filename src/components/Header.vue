@@ -3,11 +3,11 @@
   <div id="header">
     <h1 id="header-brand">
       <a href="/">QKTool</a>
-      <button id="header-menu-toggle" @click="isNavMenuShown = !isNavMenuShown">
-        <img src="../assets/img/svg/menu.svg" alt="导航菜单">
-      </button>
     </h1>
-    <div id="header-menu" v-show="isNavMenuShown">
+    <button id="header-menu-toggle" v-if="isDeviceMobile" @click="switchDisplayNavMenu">
+      <img src="../assets/img/svg/menu.svg" alt="导航菜单">
+    </button>
+    <div id="header-menu" v-if="isNavMenuShown">
       <router-link to="/">首页</router-link>
       <router-link to="/notes">笔记</router-link>
       <router-link to="/works">作品</router-link>
@@ -21,14 +21,31 @@
     name: 'Header',
     data() {
       return {
+        isDeviceMobile: false,
         isNavMenuShown: true,
       }
     },
+    mounted() {
+      const that = this;
+      window.onresize = () => {
+        if (document.body.clientWidth >= 700) {//PC端，默认显示导航栏
+          that.isDeviceMobile = false;
+          that.isNavMenuShown = true;
+        } else if (document.body.clientWidth <= 699) {//移动端，默认关闭导航栏，需要手动点击展开
+          that.isDeviceMobile = true;
+          that.isNavMenuShown = false;
+        }
+      }
+    },
+    methods: {
+      switchDisplayNavMenu() {
+        this.isNavMenuShown = !this.isNavMenuShown;
+      }
+    }
   }
 </script>
 
 <style scoped>
-  /*header通用样式*/
   #header {
     display: flex;
     display: -webkit-flex;
@@ -50,30 +67,18 @@
 
   #header-menu-toggle {
     position: absolute;
+    top: 1rem;
     right: 1rem;
-    font-size: 1.5rem;
-    border: 1px solid #999;
+    border: 0;
     outline: none;
     background-color: rgba(0, 0, 0, 0);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 5px;
+    padding: 0 .5rem;
     color: #ccc;
-  }
-
-  #header-menu-toggle:hover {
-    color: #ccc;
-    background-color: #666;
-  }
-
-  #header-menu-toggle:active {
-    color: #fff;
-    background-color: #333;
   }
 
   #header-menu-toggle img {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   #header-menu {
@@ -91,11 +96,6 @@
     #header-brand {
       flex: 0 0 auto;
       padding-left: 3rem;
-    }
-
-    /*PC端不需要导航栏展开按钮，设置为隐藏*/
-    #header-menu-toggle {
-      display: none;
     }
 
     #header-menu {
@@ -127,7 +127,6 @@
     }
 
     #header-menu {
-      /*display: none;*/
       flex-direction: column;
       justify-content: center;
       align-items: center;

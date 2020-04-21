@@ -37,10 +37,10 @@
   }
 
   #profile-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    box-shadow: 0 0 30px 10px black, 0 0 30px 10px black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /*box-shadow: 0 0 30px 10px black, 0 0 30px 10px black;*/
   }
 
   #greeting {

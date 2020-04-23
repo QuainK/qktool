@@ -1,6 +1,6 @@
 <template>
   <div id="main">
-    <div id="content">
+    <div id="content" class="content-align-center">
       <img alt="QKProfilePhoto" id="profile-photo" src="../assets/img/QKProfilePhoto.jpg">
       <br><br><br>
       <div id="greeting">Hello World</div>
@@ -40,7 +40,6 @@
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    /*box-shadow: 0 0 30px 10px black, 0 0 30px 10px black;*/
   }
 
   #greeting {

@@ -5,7 +5,7 @@
       <h3>{{version}}</h3>
     </div>
 
-    <div id="content">
+    <div id="content" class="content-align-center">
       <form>
         <label for="num-bin">二进制&nbsp;Binary</label>
         <input @input="calculate(2,binValue)" id="num-bin" min="0" placeholder="Binary" type="number"

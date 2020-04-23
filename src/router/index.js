@@ -59,6 +59,13 @@ const routes = [
       return import('../views/works/BDHConverter.vue')
     }
   },
+  {
+    path: '/notes/*',
+    name: 'NoteViewer',
+    component: function () {
+      return import('../views/notes/NoteViewer.vue')
+    }
+  },
 
 
   // 新的页面路由加在这条注释上面，即必须放在404前面

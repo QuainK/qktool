@@ -5,7 +5,7 @@
       <h3>{{version}}</h3>
     </div>
 
-    <div id="content">
+    <div id="content" class="content-align-center">
       <label for="answer">请输入0-100的整数</label>
       <input id="answer" max="100" min="0" placeholder="在此输入0-100的整数" type="number" v-model="answer">
       <div id="btn-group">

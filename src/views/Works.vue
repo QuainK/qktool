@@ -1,7 +1,7 @@
 <template>
   <div id="main">
     <div id="title">作品</div>
-    <div id="content">
+    <div id="content" class="content-align-center">
       <div class="item-container">
         <div class="item">
           <div class="item-img">

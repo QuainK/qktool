@@ -1,4 +1,3 @@
-<!--公共尾部-->
 <template>
   <div id="footer">
     <a href="https://github.com/QuainK/qktool">在 github 上查看</a>

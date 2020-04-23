@@ -1,7 +1,5 @@
 # QKTool
 
-## 3.2.0 - 2020.04.21
-
 QKTool，主要用于记录学习笔记和展示实践作品的个人网站。
 
 QKTool is a website which is used to record study notes and show practical works.

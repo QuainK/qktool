@@ -1,7 +1,7 @@
 <template>
   <div id="main">
     <div id="title">关于</div>
-    <div id="content">
+    <div id="content" class="content-align-center">
       <h1>QKTool</h1><br><br><br>
       <h2>记录学习笔记</h2>
       <h2>展示实践作品</h2><br><br><br>

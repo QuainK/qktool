@@ -6,7 +6,7 @@
       <h3>{{version}}</h3>
     </div>
 
-    <div id="content">
+    <div id="content" class="content-align-center">
       <div class="item-container">
         <div class="item">
           <img alt="必应" src="../../assets/img/logo_bing.png">

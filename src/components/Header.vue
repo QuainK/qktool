@@ -1,4 +1,3 @@
-<!--公共头部-->
 <template>
   <div id="header">
     <h1 id="header-brand">
@@ -27,7 +26,14 @@
     },
     mounted() {
       const that = this;
+      that.initNavMenu();//页面挂载后就开始适配
       window.onresize = () => {
+        that.initNavMenu();//每次屏幕改变，都重新适配
+      }
+    },
+    methods: {
+      initNavMenu() {
+        const that = this;
         if (document.body.clientWidth >= 700) {//PC端，默认显示导航栏
           that.isDeviceMobile = false;
           that.isNavMenuShown = true;
@@ -35,9 +41,7 @@
           that.isDeviceMobile = true;
           that.isNavMenuShown = false;
         }
-      }
-    },
-    methods: {
+      },
       switchDisplayNavMenu() {
         this.isNavMenuShown = !this.isNavMenuShown;
       }

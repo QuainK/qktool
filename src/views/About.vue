@@ -2,9 +2,11 @@
   <div id="main">
     <div id="title">关于</div>
     <div id="content" class="content-align-center">
-      <h1>QKTool</h1><br><br><br>
+      <h1>QKTool</h1>
+      <div class="placeholder"></div>
       <h2>记录学习笔记</h2>
-      <h2>展示实践作品</h2><br><br><br>
+      <h2>展示实践作品</h2>
+      <div class="placeholder"></div>
       <h2><a href="https://github.com/QuainK/qktool/blob/master/CHANGELOG.md">查看更新日志</a></h2>
     </div>
   </div>
@@ -42,5 +44,9 @@
     background-color: #fff;
     color: #000;
     box-shadow: 0 0 1px 1px #000;
+  }
+
+  .placeholder {
+    margin: 2rem 0;
   }
 </style>

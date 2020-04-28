@@ -5,15 +5,6 @@
       <div class="item-container">
         <div class="item">
           <div class="item-img">
-            <a href="https://qktool.top/MgtSysDemo/">
-              <img alt="管理系统示例 Management System Demo" src="../assets/img/svg/mgtsys.svg">
-            </a>
-          </div>
-          <p>管理系统示例</p>
-          <p>MgtSysDemo</p>
-        </div>
-        <div class="item">
-          <div class="item-img">
             <router-link to="/works/BDHConverter">
               <img alt="常用进制转换器 BDHConverter" src="../assets/img/svg/calculator.svg">
             </router-link>
@@ -29,15 +20,6 @@
           </div>
           <p>搜索引擎整合</p>
           <p>So</p>
-        </div>
-        <div class="item">
-          <div class="item-img">
-            <a href="https://qktool.top/Hyacinth/">
-              <img alt="风信子 Hyacinth" src="../assets/img/svg/hyacinth.svg">
-            </a>
-          </div>
-          <p>风信子</p>
-          <p>Hyacinth</p>
         </div>
         <div class="item">
           <div class="item-img">
@@ -100,7 +82,7 @@
     width: 100px;
     height: 100px;
     border: 1px solid rgba(255, 255, 255, .1);
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 10px 10px 20px #999,
     -10px -10px 20px #ddd;
     transition: box-shadow .2s ease-in-out;

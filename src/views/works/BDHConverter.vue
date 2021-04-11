@@ -1,7 +1,7 @@
 <template>
   <div id="main">
     <div id="title">
-      <h2>常用进制转换器 BDHConverter</h2>
+      <h2>进制转换器 BDHConverter</h2>
       <h3>{{ version }}</h3>
     </div>
 
@@ -27,7 +27,7 @@
       <button @click="displayChangelog">更新日志</button>
       <div v-if="isDisplayChangelog">
         <div class="log-item">
-          <span>3.0.1 - 2020.04.20</span>
+          <span>3.1.0 - 2020.04.20</span>
           <p>样式稍作修改</p>
         </div>
         <div class="log-item">
@@ -35,19 +35,19 @@
           <p>使用 Vue.js 重构</p>
         </div>
         <div class="log-item">
-          <span>2.0.0 - 2020.04.08</span>
+          <span>2.1.0 - 2020.04.08</span>
           <p>优化 HTML/CSS/JS，应用全局风格</p>
         </div>
         <div class="log-item">
-          <span>2.0.0-beta - 2019.05.09</span>
-          <p>重新编写 JavaScript 代码，大幅减少代码量</p>
+          <span>2.0.0 - 2019.05.09</span>
+          <p>重新编写 JavaScript 代码</p>
         </div>
         <div class="log-item">
-          <span>1.1.0-beta - 2019.03.22</span>
+          <span>1.1.0 - 2019.03.22</span>
           <p>增加八进制换算功能</p>
         </div>
         <div class="log-item">
-          <span>1.0.0-beta - 2019.03.21</span>
+          <span>1.0.0 - 2019.03.21</span>
           <p>完成二进制、十进制、十六进制互转功能</p>
         </div>
       </div>
@@ -58,10 +58,10 @@
 <script>
 export default {
   name: 'BDHConverter',
-  title: '常用进制转换器 BDHConverter',
+  title: '进制转换器 BDHConverter',
   data() {
     return {
-      version: '3.0.1',
+      version: '3.1.0',
       isDisplayChangelog: false,
       binValue: '',
       octValue: '',

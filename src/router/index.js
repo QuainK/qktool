@@ -36,8 +36,6 @@ const routes = [
             return import('../views/About.vue')
         },
     },
-
-
     {
         path: '/works/GuessNumber',
         name: 'GuessNumber',
@@ -66,8 +64,6 @@ const routes = [
             return import('../views/notes/NoteViewer.vue')
         }
     },
-
-
     // 新的页面路由加在这条注释上面，即必须放在404前面
     {
         path: '*',
@@ -84,12 +80,11 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    /* 路由发生变化修改页面title */
+    // 路由发生变化修改页面title
     if (to.meta.title) {
         document.title = to.meta.title
     }
     next()
 })
-
 
 export default router

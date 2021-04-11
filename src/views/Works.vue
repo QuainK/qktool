@@ -6,16 +6,16 @@
         <div class="item">
           <div class="item-img">
             <router-link to="/works/BDHConverter">
-              <img alt="常用进制转换器 BDHConverter" src="../assets/img/svg/calculator.svg">
+              <img alt="进制转换器 BDHConverter" src="../assets/img/svg/calculator.svg">
             </router-link>
           </div>
-          <p>常用进制转换器</p>
+          <p>进制转换器</p>
           <p>BDHConverter</p>
         </div>
         <div class="item">
           <div class="item-img">
             <router-link to="/works/So">
-              <img alt="搜索引擎整合 SearchEngineCollection" src="../assets/img/svg/search.svg">
+              <img alt="搜索引擎整合 So" src="../assets/img/svg/search.svg">
             </router-link>
           </div>
           <p>搜索引擎整合</p>

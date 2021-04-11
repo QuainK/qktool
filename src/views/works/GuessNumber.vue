@@ -19,23 +19,23 @@
       <button @click="displayChangelog">更新日志</button>
       <div v-if="isChangelogDisplayed">
         <div class="log-item">
-          <span>3.0.1 - 2020.04.20</span>
+          <span>2.1.0 - 2020.04.20</span>
           <p>样式稍作修改</p>
         </div>
         <div class="log-item">
-          <span>3.0.0 - 2020.04.11</span>
+          <span>2.0.0 - 2020.04.11</span>
           <p>使用 Vue.js 重构</p>
         </div>
         <div class="log-item">
-          <span>2.0.0 - 2020.04.08</span>
+          <span>1.2.0 - 2020.04.08</span>
           <p>优化 HTML/CSS/JS，应用全局风格</p>
         </div>
         <div class="log-item">
-          <span>1.0.0 - 2016.08</span>
-          <p>alpha 版本 (HTML 4.01) 文件丢失，重写 (HTML 5)</p>
+          <span>1.1.0 - 2016.08</span>
+          <p>1.0.0 版本 (HTML 4.01) 文件丢失，重写 (HTML 5)</p>
         </div>
         <div class="log-item">
-          <span>1.0.0-alpha - 2011.07</span>
+          <span>1.0.0 - 2011.07</span>
           <p>猜测随机生成的 0-100 的整数</p>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default {
   title: '猜数 GuessNumber',
   data() {
     return {
-      version: '3.0.1',
+      version: '2.1.0',
       isChangelogDisplayed: false,
       num: -1,
       answer: '',

@@ -34,10 +34,12 @@ export default {
   methods: {
     initNavMenu() {
       const that = this;
-      if (document.body.clientWidth >= 700) {//PC端，默认显示导航栏
+      if (document.body.clientWidth >= 700) {
+        // PC端，默认显示导航栏
         that.isDeviceMobile = false;
         that.isNavMenuShown = true;
-      } else if (document.body.clientWidth <= 699) {//移动端，默认关闭导航栏，需要手动点击展开
+      } else if (document.body.clientWidth <= 699) {
+        // 移动端，默认关闭导航栏，需要手动点击展开
         that.isDeviceMobile = true;
         that.isNavMenuShown = false;
       }

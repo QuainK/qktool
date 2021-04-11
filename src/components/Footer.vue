@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
-    <a href="https://github.com/QuainK/qktool">在 github 上查看</a>
-    <p>QKTool &copy; 2018-2020 QuainK</p>
+    <a href="https://github.com/QuainK/qktool">在 Github 上查看</a>
+    <p>QKTool &copy; 2018-2021 QuainK</p>
   </div>
 </template>
 

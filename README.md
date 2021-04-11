@@ -1,92 +1,73 @@
-# QKTool
+# qktool
 
-QKTool，主要用于记录学习笔记和展示实践作品的个人网站。
-
-QKTool is a website which is used to record study notes and show practical works.
+QuainK 的工具箱网站
 
 更新日志请移步至 [CHANGELOG.md](./CHANGELOG.md "CHANGELOG.md")
 
-Please move to [CHANGELOG.md](./CHANGELOG.md "CHANGELOG.md") to watch the changelog.
-
-## 环境 Environment
+## 环境
 
 - HTML 5 / CSS 3 / ECMAScript 6
 
-- Vue.js 2.x, @vue/cli 4
+- Vue.js 2.x
 
-## 用法 Usage
+- @vue/cli 4
 
-### 1. 安装好必需的插件包 Install packages required.
+## 用法
 
-```yarn
-yarn install
+1. 安装好必需依赖
+
 ```
-
-或者 or
-
-```npm
 npm install
 ```
 
-接着可以编辑修改了。 And we can edit everything.
+2. 编译成发布版本
 
-### 2. 编译成发布版本 Build to dist files.
-
-```yarn
-yarn build
 ```
-
-或者 or
-
-```npm
 npm build
 ```
 
-## 工程 Projects
+## 工程
 
-- 静态资源（页面模板、页面图标） Static resources(pages' modules and favicon)
+- 公共资源（HTML 模板、图标）
 
   > /public/
 
-- 主入口 Main entry
+- 主入口
 
   > /src/main.js
   >
   > /src/App.vue
 
-- 路由 Router
+- 路由
 
   > /src/router/
 
-- 页面 Pages
+- 页面
 
   > /src/views/
 
-- 公共资源（图片、样式表）Public resources(images, css)
+- 页面资源（图片、样式表等）
 
   > /src/assets/
 
-- 公共组件（页面头部尾部）Public components(pages' header and footer)
+- 页面组件（公共顶部底部等）
 
   > /src/components/
 
-## 结构 Structure
+## 布局
 
-网页使用弹性布局 FlexBox，大致分成上中下三大块。头部尾部不变，主体部分使用路由更新视图。
+网页使用弹性布局 FlexBox，分成上中下三大块，顶部底部保持不变，主体部分使用路由更新页面视图。
 
-The pages use the FlexBox, which are substantially divided into three parts. The header and the footer are both
-constant, and the main part use the router to refresh views.
-
-- 头部 header
+- 顶部 header
 
   - 品牌 brand
 
-  - 导航 menu（router-link）
+  - 导航 menu (router-link)
 
-- 主体 main（router-view）
+- 主体 main (router-view)
 
   - 标题 title
 
   - 内容 content
 
-- 尾部 footer
+- 底部 footer

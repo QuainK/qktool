@@ -41,59 +41,59 @@
 </template>
 
 <script>
-  import Header from '@/components/Header.vue'
-  import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 
-  export default {
-    name: 'Notes',
-    title: '笔记 Notes',
-    components: {
-      Header, Footer
-    },
-    data() {
-      return {
-        noteId: 1,
-        noteDate: '2020.04.22',
-      }
+export default {
+  name: 'Notes',
+  title: '笔记 Notes',
+  components: {
+    Header, Footer
+  },
+  data() {
+    return {
+      noteId: 1,
+      noteDate: '2020.04.22',
     }
   }
+}
 </script>
 
 <style scoped>
-  #note-info {
-    display: block;
-    font-size: .8rem;
-    color: #666;
-  }
+#note-info {
+  display: block;
+  font-size: .8rem;
+  color: #666;
+}
 
-  #note-info * {
-    display: inline-block;
-    /*background-color: #3366cc;*/
-    margin: 0 1rem;
-  }
+#note-info * {
+  display: inline-block;
+  /*background-color: #3366cc;*/
+  margin: 0 1rem;
+}
 
+#note-content {
+  display: block;
+  align-self: center;
+  text-align: left;
+  text-indent: 2rem;
+  line-height: 1.5rem;
+  padding: .5rem;
+}
+
+@media screen and (min-width: 700px) {
   #note-content {
-    display: block;
-    align-self: center;
-    text-align: left;
-    text-indent: 2rem;
-    line-height: 1.5rem;
-    padding: .5rem;
+    width: 50%;
   }
+}
 
-  @media screen and (min-width: 700px) {
-    #note-content {
-      width: 50%;
-    }
+@media screen and (max-width: 699px) {
+  #note-content {
+    width: 100%;
   }
+}
 
-  @media screen and (max-width: 699px) {
-    #note-content {
-      width: 100%;
-    }
-  }
-
-  #note-content p {
-    margin: 1rem 0;
-  }
+#note-content p {
+  margin: 1rem 0;
+}
 </style>

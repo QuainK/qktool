@@ -3,7 +3,7 @@
   <div id="main">
     <div id="title">
       <h2>搜索引擎整合 So</h2>
-      <h3>{{version}}</h3>
+      <h3>{{ version }}</h3>
     </div>
 
     <div id="content" class="content-align-center">
@@ -59,68 +59,68 @@
 </template>
 
 <script>
-  export default {
-    name: 'So',
-    title: '搜索引擎整合 So',
-    data() {
-      return {
-        version: '1.0.2',
-        isDisplayChangelog: false,
-      }
-    },
-    methods: {
-      displayChangelog() {
-        this.isDisplayChangelog = !this.isDisplayChangelog;
-      },
+export default {
+  name: 'So',
+  title: '搜索引擎整合 So',
+  data() {
+    return {
+      version: '1.0.2',
+      isDisplayChangelog: false,
     }
+  },
+  methods: {
+    displayChangelog() {
+      this.isDisplayChangelog = !this.isDisplayChangelog;
+    },
   }
+}
 </script>
 
 <style scoped>
-  #content {
-    background-color: #fff;
-  }
+#content {
+  background-color: #fff;
+}
 
-  .item-container {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
+.item-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 
-  .item {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.item {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  img {
-    padding: .5rem 0;
-    width: 100px;
-    height: 50px;
-  }
+img {
+  padding: .5rem 0;
+  width: 100px;
+  height: 50px;
+}
 
-  input {
-    margin: .5rem 0;
-    width: 250px;
-    height: 2rem;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    padding: 0 .5rem;
-  }
+input {
+  margin: .5rem 0;
+  width: 250px;
+  height: 2rem;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 .5rem;
+}
 
-  input:hover {
-    background-color: #ccc;
-    border: 2px solid #999;
-  }
+input:hover {
+  background-color: #ccc;
+  border: 2px solid #999;
+}
 
-  input:active {
-    background-color: #999;
-    border: 2px solid #666;
-  }
+input:active {
+  background-color: #999;
+  border: 2px solid #666;
+}
 </style>

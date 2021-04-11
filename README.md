@@ -74,7 +74,8 @@ npm build
 
 网页使用弹性布局 FlexBox，大致分成上中下三大块。头部尾部不变，主体部分使用路由更新视图。
 
-The pages use the FlexBox, which are substantially divided into three parts. The header and the footer are both constant, and the main part use the router to refresh views.
+The pages use the FlexBox, which are substantially divided into three parts. The header and the footer are both
+constant, and the main part use the router to refresh views.
 
 - 头部 header
 
